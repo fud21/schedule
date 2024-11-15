@@ -1,0 +1,63 @@
+/* one랑 two를 가진 클래스 */
+.one.two {
+    color: red;
+}
+/* id가 first이면서 one랑 two를 가진 클래스 */
+#first.one.two {
+    color: red;
+}
+/* 복합 선택자 */
+/* container 안에 있는 후손 / 띄어쓰기로 표현 */
+.container .user-name {
+    color: red;
+}
+/* container의 자식인 item / > 로 표현 */
+.container > .item {
+    color: red;
+}
+/* ::before그 */
+/* h3 바로 다음에 있는 h4 태그를 가져와라 */
+h3 + h4 {
+    color: red;
+}
+/* 형제 */
+/* h3와 같은 레벨에 있는 h5 태그를 가져와라 */
+h3 ~ h5 {
+    color: red;
+}
+/* - :hover 마우스 호버(올라간) 상태 */
+button:hover {
+    background-color: green;
+}
+/* :active 활성 상태 (마우스 클릭 후 떼는 시점까지) / 배경색이 바뀜(activated:active) */
+.activated:active {
+    background-color: green;
+}
+/* :focus 포커스가 있는 상태 (input 입력창에 커서가 깜빡이는 상태) */
+input {
+    width: 500px
+}
+input:focus {
+    background-color: red;
+}
+/* :link 하이퍼링크에 방문하지 않은 상태 */
+/* :visited 하이퍼링크에 방문한 상태 */
+a {
+    color: black;
+}
+/* 처음엔 초록색으로 뜸 -> 방문하면 빨간색으로 변경됨 */
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+.app {
+    width: 300px;
+    height: 300px;
+/* 아래 세 개를 지정해야 테두리가 나타남 */
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
